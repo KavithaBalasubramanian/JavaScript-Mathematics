@@ -1,0 +1,18 @@
+//Given a number N, print 'INT' if it is integer range or print 'LONG' if it is greater.
+
+const readline = require('readline');
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+//const userInput = [];
+
+inp.on("line", (Data) => {
+    var inputData = Data;
+    var N=parseInt(Data);
+    if(1<=N && N<=100000)
+    console.log("INT")
+    else
+    console.log("LONG")
+});
