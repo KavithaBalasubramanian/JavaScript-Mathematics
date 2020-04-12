@@ -1,0 +1,24 @@
+//Given 3 numbers A,B,C print 'yes' if they can form the sides of a right angled triangle,otherwise 'no'.
+
+
+
+const readline = require('readline');
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+//const userInput = [];
+
+inp.on("line", (Data) => {
+    var inputData = Data.split(" ");
+    var a =parseInt(inputData[0]);
+    var b =parseInt(inputData[1]);
+    var c =parseInt(inputData[2]);
+    var d = c*c;
+    var e = ((b*b)+(a*a))
+    if(d==e)
+      console.log("yes")
+  else
+    console.log("no")
+});
