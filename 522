@@ -1,0 +1,30 @@
+//You are given a task to tell whether the number is pure or not. A pure number is a number whose sum of digits is multiple of 3.
+
+
+
+const readline = require('readline');
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (data) => {
+  var inputdata=data.split(" ");
+  var n = parseInt(inputdata[0]);
+  while(n>0)    
+{    
+var m=n%10;    
+ var sum=sum+m;    
+n=n/10;    
+}    
+  if(sum%3===0)
+  {
+    console.log("pure")
+  }
+    else
+    {
+ console.log("not")
+  }
+});
