@@ -1,0 +1,21 @@
+//Given 3 numbers a,b,c print a*b mod c.
+
+
+const readline = require('readline');
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (Data) => {
+   var inputData = Data.split(" ");
+    var a =parseInt(inputData[0]);
+   var b =parseInt(inputData[1]);
+   var c =parseInt(inputData[2]);
+  var sum;
+  sum = (a*b)%c;
+  
+	console.log(sum)
+});
