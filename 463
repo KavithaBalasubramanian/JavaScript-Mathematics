@@ -1,0 +1,25 @@
+//You are given an integer N, find if the number is divisible by 4.
+
+N >= 1
+
+1 <= No. of digits in N <= 1000
+
+ 
+
+
+const readline = require('readline');
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+//const userInput = [];
+
+inp.on("line", (Data) => {
+    var inputData = Data;
+    var a =parseInt(inputData[0]);
+    if(a%4===0)
+    console.log("YES")
+    else
+    console.log("NO")
+});
