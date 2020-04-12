@@ -1,0 +1,20 @@
+//Given the values of a,b and x in the equation ax + b = y. Find the value of y.
+
+
+const readline = require('readline');
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+//const userInput = [];
+
+inp.on("line", (Data) => {
+    var inputData = Data.split(" ");
+    var a =parseInt(inputData[0]);
+    var b =parseInt(inputData[1]);
+    var x=parseInt(inputData[2]);
+  var y = (a*x)+b;
+  console.log(y)
+});
+  
