@@ -1,0 +1,29 @@
+//Given a number N, check whether it is prime or not.Print 'yes' if it is prime else print 'no'.
+
+
+const readline = require('readline');
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (Data) => {
+    var inputData = Data.split(" ");
+    var number =parseInt(inputData[0]);
+     var m=0;
+     var flag = 0;
+     m=number/2;
+     for(var i =2;i<=m;i++)
+     {
+         if(number%i===0)
+         {
+             console.log("no");
+             flag=1;
+             break;
+         }
+     }
+     if(flag===0)
+     console.log("yes");
+});
