@@ -1,0 +1,27 @@
+//You are given with two integers denoting h and m. Your task is to find the angle between that particular min hand and hour hand.
+
+
+const readline = require('readline');
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+//const userInput = [];
+
+inp.on("line", (Data) => {
+    var inputData = Data.split(" ");
+    var H =parseInt(inputData[0]);
+    var M =parseInt(inputData[1]);
+  if(H==12) H=0;
+  if(M==60) M=0
+   var a = H*(360/12)+(M*360)/(12*60);
+    var b = M*(360/60);
+    var diff =Math.abs(a-b);
+  var d2 = (360-diff)
+  if (diff<d2)
+    console.log(diff)
+  else
+    console.log(d2)
+})
+  
