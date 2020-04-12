@@ -1,0 +1,20 @@
+//Given base(B) and height(H) of a triangle find its area.
+
+
+const readline = require('readline');
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+//const userInput = [];
+
+inp.on("line", (Data) => {
+    var inputData = Data.split(" ");
+    var n =parseInt(inputData[0]);
+    var m = parseInt(inputData[1]);
+    var s = (n*m)/2;
+    console.log(s);
+});
+  
+    
