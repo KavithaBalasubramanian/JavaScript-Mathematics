@@ -1,0 +1,23 @@
+//Given 3 angles A,B,C find if they can be interior angles of a triangle.If they form an interior triangle for the given angle,print 'yes' otherwise print 'no'.
+Input Size : 0 <= A,B,C <= 180
+
+
+const readline = require('readline');
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+//const userInput = [];
+
+inp.on("line", (Data) => {
+    var inputData = Data.split(" ");
+    var a =parseInt(inputData[0]);
+    var b =parseInt(inputData[1]);
+    var c =parseInt(inputData[2]);
+    var d = a+b+c;
+    if(d===180)
+    console.log("yes")
+    else
+    console.log("no")
+});
