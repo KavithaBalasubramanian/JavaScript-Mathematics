@@ -1,0 +1,25 @@
+//Given 2 numbers N,M. Find their difference and check whether it is even or odd.
+
+
+const readline = require('readline');
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (Data) => {
+   var inputData = Data.split(" ");
+    var a =parseInt(inputData[0]);
+   var b =parseInt(inputData[1]);
+   var diff = a-b;
+   if((diff%2)==0)
+   {
+       console.log("even")
+   }
+   else
+   {
+       console.log("odd")
+   }
+});
