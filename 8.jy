@@ -1,0 +1,19 @@
+// Given a floating point number with 1 decimal place round it off to nearest greater integer and print it.
+
+
+
+const readline = require('readline');
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+//const userInput = [];
+
+inp.on("line", (Data) => {
+    var inputData = Data;
+    var n =parseFloat(Data);
+    var a = Math.round(n);
+   console.log(parseInt(a));
+    //return a;
+});
