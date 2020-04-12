@@ -1,0 +1,18 @@
+//Count the number of digits of a given number N.Size of the integer ranges from 1Sample Testcases :
+
+
+const readline = require('readline');
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+//const userInput = [];
+
+inp.on("line", (Data) => {
+    var inputData = Data.split(" ");
+    var num =parseInt(inputData[0]);
+    
+var digits=num.toString().length;
+console.log(digits)
+});
