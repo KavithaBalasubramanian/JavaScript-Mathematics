@@ -1,0 +1,21 @@
+//Given 3 numbers A,B,C process and print 'yes' if they can form the sides of a triangle otherwise print 'no'.
+
+
+const readline = require('readline');
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+//const userInput = [];
+
+inp.on("line", (Data) => {
+    var inputData = Data.split(" ");
+    var a =parseInt(inputData[0]);
+    var b =parseInt(inputData[1]);
+    var c =parseInt(inputData[2]);
+    if(a<c && b<c)
+    console.log("yes")
+else
+console.log("no")
+});
