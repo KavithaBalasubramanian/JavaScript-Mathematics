@@ -1,0 +1,24 @@
+//Given a number N and a number K, find the greatest number which divides both.
+
+
+const readline = require('readline');
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+//const userInput = [];
+
+inp.on("line", (Data) => {
+    var inputData = Data.split(" ");
+    var n = parseInt(inputData[0]);
+    var m = parseInt(inputData[1]);
+    if(n%m===0)
+    {
+        console.log(m)
+    }
+    else
+    {
+        console.log(n)
+    }
+});
