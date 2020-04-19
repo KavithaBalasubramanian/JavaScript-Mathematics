@@ -1,0 +1,29 @@
+//Given a number N, print the odd factors for the N.
+
+
+const readline = require('readline');
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+//const userInput = [];
+
+inp.on("line", (Data) => {
+    var inputData = Data;
+    var num =parseInt(Data);
+    var arr = [];
+    for(i=1;i<=num;i++)
+    {
+        var b = num%i;
+        if(b===0)
+        {
+            var c = i%2;
+        if(c>0)
+        {
+            arr.push(i)
+        }
+        }
+    }
+    console.log(arr.join(" "));
+});
