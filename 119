@@ -1,0 +1,36 @@
+//Given 2 numbers N,K print the value of nCk(C-Combination).
+
+const readline = require('readline');
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+//const userInput = [];
+
+inp.on("line", (Data) => {
+    var inputData = Data.split(" ");
+    var n = parseInt(inputData[0]);
+    var m = parseInt(inputData[1]);
+    var fact =1;
+    var facto =1;
+    var factoo =1;
+   for (i = 1; i <= n; ++i) 
+        {
+            fact = fact*i;
+        }
+        
+        for (k = 1; k <= m; ++k) 
+        {
+            factoo = factoo*k;
+        }
+        
+        var c = n-m;
+        for (j=1;j<=c;j++)
+        {
+           var facto = facto*j
+        }
+       var permutation = parseInt(fact/(factoo*facto));
+        
+    console.log(permutation)
+});
