@@ -13,7 +13,7 @@ const inp = readline.createInterface({
 inp.on("line", (Data) => {
     var inputData = Data;
     var n =parseFloat(Data);
-    var a = Math.round(n);
+    var a = Math.ceil(n);
    console.log(parseInt(a));
     //return a;
 });
