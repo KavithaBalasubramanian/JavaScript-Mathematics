@@ -1,0 +1,30 @@
+//Given a number N, print the sum of the squares of its digits.
+Input Size : 1 <= N <= 1000000000000000000
+Sample Testcase :
+INPUT
+19
+OUTPUT
+82
+
+
+const readline = require('readline');
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (Data) => {
+    var inputData = Data;
+    var n =parseInt(Data);
+     var t = 0;
+    
+ while(n>0)
+ {
+     var r=parseInt(n%10);
+      var t=t+(r*r);
+      n=parseInt(n/10);
+ }
+ console.log(t);
+});
