@@ -1,0 +1,21 @@
+//Given a number N, print its reverse.
+
+const readline = require('readline');
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+//const userInput = [];
+
+inp.on("line", (Data) => {
+    var inputData = Data;
+    var n =(inputData);
+    var rev = 0;
+    while (n > 0) {
+       var remainder = parseInt(n % 10);
+       var rev =( rev * 10 )+ remainder;
+        n =parseInt(n/ 10);
+    }
+    console.log(rev)
+});
