@@ -1,0 +1,22 @@
+//Given a range[L,R], print the sum of all the odd numbers within the range(inclusive of L and R).
+
+
+const readline = require('readline');
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+//const userInput = [];
+
+inp.on("line", (Data) => {
+    var inputData = Data.split(" ");
+    var n = parseInt(inputData[0]);
+    var m = parseInt(inputData[1]);
+    var sum =0 ;
+    for(var i=n;i<=m;i+=2)
+    {
+        sum = sum + i;
+    }
+    console.log(sum);
+});
