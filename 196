@@ -1,0 +1,42 @@
+//Given 2 strings S,X. Print 'yes' if their lengths are co-prime otherwise print 'no'.
+
+
+const readline = require('readline');
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+//const userInput = [];
+
+inp.on("line", (Data) => {
+    var inputData = Data.split(" ");
+    var hcf =0;
+    var a =(inputData[0]);
+    var b =(inputData[1]);
+    var c = a.toString();
+    var d = b.toString();
+   var e = a.length;
+   var f= b.length;
+  
+  for(var i=1;i<=e;i++)
+  {
+      if((e%i===0) && (f%i===0))
+      {
+          hcf = i;
+      }
+  }
+
+ 
+   if(hcf==1)
+      {
+          console.log("yes")
+      }
+      else
+      {
+          console.log("no")
+      }
+  
+  
+  
+});
