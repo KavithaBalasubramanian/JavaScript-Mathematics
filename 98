@@ -1,0 +1,42 @@
+////Given a number N, print the even factors of N.If the even factor does not exists for N print '-1'.
+
+
+
+const readline = require('readline');
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+//const userInput = [];
+
+inp.on("line", (Data) => {
+    var inputData = Data;
+    var n = parseInt(inputData);
+    var arr = [];
+    
+    for(var i = 1;i<=n;i++)
+    {
+         if((n%i)===0)
+         {
+             if(i%2===0)
+             {
+                 arr.push(i);
+                 
+        }
+         
+         }
+    }
+               if((arr.length)===0)
+                 {
+                 
+                 console.log("-1")
+             }
+             else
+             {
+                 console.log(arr.join(" "));
+             }
+         
+    
+    
+});
