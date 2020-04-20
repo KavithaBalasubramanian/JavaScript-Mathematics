@@ -1,0 +1,31 @@
+//Given 2 numbers a and B.Print the value of a!/b!.
+
+
+const readline = require('readline');
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+//const userInput = [];
+
+inp.on("line", (Data) => {
+    var inputData = Data.split(" ");
+    var a =parseInt(inputData[0]);
+    var b =parseInt(inputData[1]);
+    var fact = 1;
+    var facto = 1;
+    for(var i=1;i<=a;i++)
+    {
+        var fact = fact *i;
+    }
+    
+    for(var j=1;j<=b;j++)
+    {
+        var facto = facto *j;
+    }
+    
+    var value = (fact/facto)
+    console.log(value)
+});
+    
