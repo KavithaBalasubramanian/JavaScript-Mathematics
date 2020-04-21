@@ -1,0 +1,25 @@
+//Given 2 numbers N and K.check if N is a power of K.Print 'yes' if it is a power of k otherwise print 'no'.
+
+
+const readline = require('readline');
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (Data) => {
+    var inputData = Data.split(" ");
+    var n =parseInt(inputData[0]);
+    var m =parseInt(inputData[1]);
+    var a = m*m;
+   if(n==a)
+   {
+       console.log("yes")
+   }
+    else
+    {
+    console.log("no")
+    }
+});
