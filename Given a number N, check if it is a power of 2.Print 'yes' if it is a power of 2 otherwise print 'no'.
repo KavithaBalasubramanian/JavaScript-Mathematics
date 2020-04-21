@@ -1,0 +1,22 @@
+//Given a number N, check if it is a power of 2.Print 'yes' if it is a power of 2 otherwise print 'no'.
+
+const readline = require('readline');
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (Data) => {
+    var inputData = Data;
+    var n =(inputData);
+    if((n !==0) && ((n &(n- 1)) ===0))
+    {
+        console.log("yes")
+    }
+    else
+    {
+        console.log("no")
+    }
+});
