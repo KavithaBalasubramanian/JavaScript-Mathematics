@@ -1,0 +1,63 @@
+//Assume that you are ticket verifier at a club. Your club has decided to give a special discount to the person(s) who are satisfying the following condition
+
+const rl = require('readline');
+const ip = rl.createInterface({input:process.stdin, output:process.stdout});
+let a,b,c;
+let count = 0;
+var arr=[];
+ip.on('line', (data) => {
+  if (count === 0){
+    a = parseInt(data);
+    count++;
+  }
+  else if(count == 1){
+    b = data.split(" ").map(num => Number(num));
+     count++
+  }
+  else if(count == 1){
+    c = data.split(" ").map(num => Number(num));
+     count++
+  }
+   else if(count == 1){
+    d = data.split(" ").map(num => Number(num));
+     count++
+  }
+   else if(count == 1){
+    e = data.split(" ").map(num => Number(num));
+     count++
+  }
+  else if(count == 1){
+    f = data.split(" ").map(num => Number(num));
+     count++
+  }
+  else if(count == 1){
+    g = data.split(" ").map(num => Number(num));
+     count++
+  }
+  else if(count == 2){
+    h = data.split(" ").map(num => Number(num));
+     count++
+  }
+  else {
+    return
+  }
+});
+
+
+ip.on('close', () => {
+  for(i=0;i<a;i++)
+  {
+      if(b[i]%h===0)
+      {
+      
+     arr.push("1")
+      }
+      else
+      {
+          arr.push("0")
+      }
+  }
+      console.log(arr.join(" "))
+      
+});
+    
