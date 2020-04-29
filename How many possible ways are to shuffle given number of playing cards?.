@@ -1,0 +1,22 @@
+//How many possible ways are to shuffle given number of playing cards?.
+
+
+
+ const readline = require('readline');
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+//const userInput = [];
+
+inp.on("line", (Data) => {
+    var inputData = Data;
+    var a =parseInt(inputData);
+    var fact = 1;
+for (var i=1;i<=a;i++)
+   {
+        fact = fact*i
+   }
+   console.log(fact)
+});
