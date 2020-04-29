@@ -1,0 +1,62 @@
+//You are given given task is to print whether array is ‘majestic’ or not.A ‘majsetic’ array is an array whose sum of first three number is equal to last three number.
+
+
+
+const rl = require('readline');
+const ip = rl.createInterface({input:process.stdin, output:process.stdout});
+let a,b,c;
+let count = 0;
+ip.on('line', (data) => {
+  if (count === 0){
+    a = parseInt(data);
+    count++;
+  }
+  else if(count == 1){
+    b = data.split(" ").map(num => Number(num));
+     count++
+  }
+  else if(count == 1){
+    c = data.split(" ").map(num => Number(num));
+     count++
+  }
+   else if(count == 1){
+    d = data.split(" ").map(num => Number(num));
+     count++
+  }
+   else if(count == 1){
+    e = data.split(" ").map(num => Number(num));
+     count++
+  }
+  else if(count == 1){
+    f = data.split(" ").map(num => Number(num));
+     count++
+  }
+  else if(count == 1){
+    g = data.split(" ").map(num => Number(num));
+     count++
+  }
+  else if(count == 1){
+    h = data.split(" ").map(num => Number(num));
+     count++
+  }
+  else {
+    return
+  }
+});
+
+
+ip.on('close', () => {
+    
+  var sum1 = b[0]+b[1]+b[2]
+  var sum2 = b[4]+b[5]+b[6]
+ 
+ if(sum1===sum2)
+  {
+      console.log("1")
+  }
+  else
+  {
+      console.log("0")
+  }
+
+});
