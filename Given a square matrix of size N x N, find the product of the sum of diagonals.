@@ -1,0 +1,43 @@
+//Given a square matrix of size N x N, find the product of the sum of diagonals.
+Input Size : N <= 1000
+
+
+const rl = require('readline');
+const ip = rl.createInterface({input:process.stdin, output:process.stdout});
+let a,b,c;
+let count = 0;
+ip.on('line', (data) => {
+  if (count === 0){
+    a = parseInt(data);
+    count++;
+  }
+  else if(count == 1){
+    b = data.split(" ").map(num => Number(num));
+     count++
+  }
+  else if(count == 1){
+    c = data.split(" ").map(num => Number(num));
+     count++
+  }
+   else if(count == 2){
+    d = data.split(" ").map(num => Number(num));
+     count++
+  }
+   else if(count == 2){
+    e = data.split(" ").map(num => Number(num));
+     count++
+  }
+  
+ else {
+    return
+  }
+});
+ip.on('close', () => {
+    
+    var diagonal1 = b[0] + d[1];
+    var diagonal2 = b[1] + d[0];
+    
+    var product = diagonal1*diagonal2;
+    
+    console.log(product)
+});
