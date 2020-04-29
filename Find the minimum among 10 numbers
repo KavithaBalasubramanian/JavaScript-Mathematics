@@ -1,0 +1,28 @@
+//Find the minimum among 10 numbers
+
+
+
+const readline = require('readline');
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (Data) => {
+    var inputData = Data.split(" ");
+    var a =parseInt(inputData[0]);
+    var b =parseInt(inputData[1]);
+    var c =parseInt(inputData[2]);
+    var d =parseInt(inputData[3]);
+    var e =parseInt(inputData[4]);
+    var f =parseInt(inputData[5]);
+    var g =parseInt(inputData[6]);
+    var h =parseInt(inputData[7]);
+    var i =parseInt(inputData[8]);
+    var j =parseInt(inputData[9]);
+    
+    var mini= Math.min(a,b,c,d,e,f,g,h,i,j)
+    console.log(mini)
+});
