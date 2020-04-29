@@ -1,0 +1,20 @@
+//Given a number N in decimal, print the length of the corresponding binary digit.
+
+
+
+
+const readline = require('readline');
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+//const userInput = [];
+
+inp.on("line", (Data) => {
+    var inputData = Data;
+    var a=(inputData);
+    var c= parseInt(a,10).toString(2);
+    console.log(c.length)
+
+});
