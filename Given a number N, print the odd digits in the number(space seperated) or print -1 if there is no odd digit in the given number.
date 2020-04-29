@@ -1,0 +1,44 @@
+//Given a number N, print the odd digits in the number(space seperated) or print -1 if there is no odd digit in the given number.
+
+
+const readline = require('readline');
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (Data) => {
+    var inputData = Data;
+    var n =(inputData);
+   var a =n;
+   var arr = [];
+   reverse=0;
+   while(n!==0)    
+  {    
+    var rem=parseInt(n%10);    
+    var  reverse=reverse*10+rem;    
+     n=parseInt(n/10);    
+  }    
+  
+  
+    for(var i=0;i<a.length;i++)
+    {
+        var rem1 = parseInt(reverse%10)
+        reverse=parseInt(reverse/10)
+    if((rem1%2)!==0)
+    {
+        arr.push(rem1)
+    }
+    }
+    
+if(arr.length===0)
+{
+    console.log("-1")
+}
+else
+{
+    console.log(arr.join(" "))
+}
+});
