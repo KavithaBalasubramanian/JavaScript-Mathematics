@@ -1,0 +1,20 @@
+
+//Given 3 numbers A,B,C find the sum of Arithmetic Series with a=A, d=B and n=C
+
+
+const readline = require('readline');
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+//const userInput = [];
+
+inp.on("line", (Data) => {
+    var inputData = Data.split(" ");
+    var a =parseInt(inputData[0]);
+    var d =parseInt(inputData[1]);
+    var n =parseInt(inputData[2]);
+    var arithmetic = (n/2)*[(2*a)+(n-1)*d] // formula (n/2)[2a+(n-1)*d]
+    console.log (parseInt(arithmetic))
+});
